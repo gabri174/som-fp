@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { Download, FileText, Image, BookOpen, ExternalLink, CheckCircle, Clock, HardDrive } from 'lucide-react'
+import { Download, FileText, Image, BookOpen, ExternalLink, CheckCircle, Clock, HardDrive, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Recursos - SOM FP',
