@@ -403,7 +403,7 @@ export default function QuizComponent() {
 
       {/* Feedback */}
       {showResult && (
-        <div className="mb-8 p-4 rounded-lg border-l-4 bg-gray-800 ${
+        <div className={`mb-8 p-4 rounded-lg border-l-4 bg-gray-800 ${
           selectedAnswer === currentQuestionData.correctAnswer
             ? 'border-neon-green'
             : 'border-yellow-400'
