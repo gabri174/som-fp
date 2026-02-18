@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { Monitor, HardDrive, Shield, Terminal, CheckCircle, AlertTriangle, ArrowRight } from 'lucide-react'
+import { Monitor, HardDrive, Shield, Terminal, CheckCircle, AlertTriangle, ArrowRight, Terminal as Linux } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Unidad 3: Instalación de Sistemas Operativos - SOM FP',
