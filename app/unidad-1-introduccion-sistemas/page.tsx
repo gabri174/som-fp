@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { Cpu, HardDrive, Settings, Zap, ArrowRight, Monitor, Shield } from 'lucide-react'
+import { Cpu, HardDrive, Settings, Zap, ArrowRight, Monitor, Shield, Cpu as Chip } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Unidad 1: Introducción a Sistemas - SOM FP',
