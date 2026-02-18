@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { Monitor, HardDrive, Shield, Terminal, Windows, Linux, CheckCircle, AlertTriangle, ArrowRight } from 'lucide-react'
+import { Monitor, HardDrive, Shield, Terminal, CheckCircle, AlertTriangle, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Unidad 3: Instalación de Sistemas Operativos - SOM FP',
@@ -228,11 +228,9 @@ export default function Unidad3Page() {
                 <div key={index} className="glass-dark rounded-xl p-6">
                   <div className="flex items-center mb-6">
                     <div className={`bg-gray-800 rounded-lg p-3 mr-4`}>
-                      {index === 0 ? (
-                        <Windows className={`h-8 w-8 ${fs.color}`} />
-                      ) : (
-                        <Linux className={`h-8 w-8 ${fs.color}`} />
-                      )}
+                      <div className={`text-2xl font-bold ${fs.color}`}>
+                        {index === 0 ? 'W' : 'L'}
+                      </div>
                     </div>
                     <div>
                       <h3 className={`text-2xl font-bold ${fs.color}`}>{fs.name}</h3>
@@ -278,7 +276,9 @@ export default function Unidad3Page() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="glass-dark rounded-xl p-8">
               <div className="flex items-center mb-6">
-                <Windows className="h-8 w-8 text-blue-400 mr-3" />
+                <div className="bg-gray-800 rounded-lg p-3 mr-4">
+                  <div className="text-blue-400 text-2xl font-bold">W</div>
+                </div>
                 <h3 className="text-2xl font-bold text-white">Windows 11</h3>
               </div>
               <div className="space-y-4">

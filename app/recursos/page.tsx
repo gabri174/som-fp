@@ -208,19 +208,19 @@ export default function RecursosPage() {
                           <HardDrive className="h-4 w-4 mr-2" />
                           {item.size}
                         </div>
-                        {item.pages && (
+                        {'pages' in item && (
                           <div className="flex items-center">
                             <FileText className="h-4 w-4 mr-2" />
                             {item.pages}
                           </div>
                         )}
-                        {item.resolution && (
+                        {'resolution' in item && (
                           <div className="flex items-center">
                             <Image className="h-4 w-4 mr-2" />
                             {item.resolution}
                           </div>
                         )}
-                        {item.lines && (
+                        {'lines' in item && (
                           <div className="flex items-center">
                             <BookOpen className="h-4 w-4 mr-2" />
                             {item.lines}
