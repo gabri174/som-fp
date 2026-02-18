@@ -4,9 +4,45 @@ import BinaryConverter from './components/BinaryConverter'
 import UnitConverter from './components/UnitConverter'
 
 export const metadata: Metadata = {
-  title: 'Unidad 2: Gestión de Datos - SOM FP',
-  description: 'Aprende sistemas de numeración binario y hexadecimal, unidades de medida KB vs KiB, y representación de la información.',
-  keywords: 'binario, hexadecimal, unidades de medida, KB, KiB, conversión, SOM, SMR',
+  title: 'Conversión Binario Hexadecimal | Calculadora Unidades Datos | SOM FP',
+  description: 'Calculadora online para convertir binario a hexadecimal, decimal y viceversa. Convertidor de unidades de datos KB MB GB TB. Herramientas gratuitas para Sistemas Operativos y Mantenimiento SMR. Aprende representación de información y sistemas de numeración.',
+  keywords: 'calculadora binario hexadecimal, conversor binario decimal, convertir unidades datos, KB MB GB TB, calculadora bytes, sistema binario, hexadecimal a decimal, conversión datos online, herramientas SMR, sistemas operativos, representación información, conversión unidades almacenamiento, calculadora informática, binario a texto, decimal a binario, hexadecimal a binario, conversión base numérica, unidades de medida bytes, kilobyte megabyte gigabyte, terabyte petabyte, conversión datos gratis, tutorial conversión binario, guía hexadecimal, ejercicios binario, calculadora programación, conversión sistemas numéricos, herramientas conversión datos, curso SMR online, sistemas numeración informática',
+  openGraph: {
+    title: 'Calculadora Binario Hexadecimal | Conversión Unidades Datos | SOM FP',
+    description: 'Herramientas gratuitas online para convertir binario, hexadecimal y unidades de datos. Perfecto para estudiantes de Sistemas Operativos y Mantenimiento SMR.',
+    type: 'website',
+    locale: 'es_ES',
+    url: 'https://som-fp.es/unidad-2-gestion-datos',
+    siteName: 'SOM FP - Sistemas Operativos y Mantenimiento',
+    images: [
+      {
+        url: 'https://som-fp.es/og-image-calculadora-datos.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Calculadora Binario Hexadecimal y Conversión de Unidades de Datos'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Calculadora Binario Hexadecimal | Conversión Unidades Datos',
+    description: 'Herramientas gratuitas para convertir binario, hexadecimal y unidades de datos. Ideal para estudiantes SMR.',
+    images: ['https://som-fp.es/og-image-calculadora-datos.jpg']
+  },
+  alternates: {
+    canonical: 'https://som-fp.es/unidad-2-gestion-datos'
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  }
 }
 
 export default function Unidad2Page() {
@@ -72,12 +108,58 @@ export default function Unidad2Page() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Unidad 2: Gestión de Datos
+            Calculadora Binario Hexadecimal | Conversión Unidades Datos
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Domina los sistemas de numeración y las unidades de medida esenciales para entender cómo los ordenadores procesan y almacenan información.
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+            Herramientas online gratuitas para convertir binario a hexadecimal, decimal y viceversa. Calculadora de unidades de datos KB MB GB TB. Aprende sistemas de numeración y representación de información para Sistemas Operativos y Mantenimiento SMR.
           </p>
+          <div className="flex flex-wrap justify-center gap-4 text-sm">
+            <span className="bg-gray-800 px-3 py-1 rounded-full text-electric-blue">🔢 Calculadora Binario</span>
+            <span className="bg-gray-800 px-3 py-1 rounded-full text-electric-blue">🔄 Conversor Hexadecimal</span>
+            <span className="bg-gray-800 px-3 py-1 rounded-full text-electric-blue">💾 Unidades Datos</span>
+            <span className="bg-gray-800 px-3 py-1 rounded-full text-electric-blue">📊 KB MB GB TB</span>
+            <span className="bg-gray-800 px-3 py-1 rounded-full text-electric-blue">🎓 SMR Online</span>
+          </div>
         </div>
+
+        {/* SEO Content Section */}
+        <section className="mb-20 glass rounded-2xl p-8">
+          <h2 className="text-3xl font-bold text-white mb-6 flex items-center">
+            <Database className="mr-3 h-8 w-8 text-electric-blue" />
+            Herramientas de Conversión de Datos - Guía Completa
+          </h2>
+          <div className="prose prose-invert max-w-none">
+            <p className="text-gray-300 mb-4">
+              Bienvenido a la calculadora online más completa para <strong>conversión binario hexadecimal</strong> y <strong>unidades de datos</strong>. 
+              Nuestras herramientas gratuitas te permiten convertir entre sistemas numéricos (binario, decimal, hexadecimal) 
+              y calcular unidades de almacenamiento (KB, MB, GB, TB) de forma instantánea.
+            </p>
+            <div className="grid md:grid-cols-2 gap-8 mt-8">
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-4">🔢 Calculadora Binario Hexadecimal</h3>
+                <ul className="text-gray-300 space-y-2">
+                  <li>✅ Convertir binario a decimal</li>
+                  <li>✅ Convertir decimal a binario</li>
+                  <li>✅ Convertir hexadecimal a decimal</li>
+                  <li>✅ Convertir decimal a hexadecimal</li>
+                  <li>✅ Convertir binario a hexadecimal</li>
+                  <li>✅ Convertir hexadecimal a binario</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-4">💾 Conversor Unidades Datos</h3>
+                <ul className="text-gray-300 space-y-2">
+                  <li>✅ Convertir Bytes a KB, MB, GB</li>
+                  <li>✅ Convertir KB a MB, GB, TB</li>
+                  <li>✅ Diferencia KB vs KiB</li>
+                  <li>✅ Cálculo exacto de almacenamiento</li>
+                  <li>✅ Herramienta para estudiantes SMR</li>
+                  <li>✅ Guía de unidades de medida</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Number Systems Overview */}
         <section className="mb-20">
@@ -272,6 +354,81 @@ export default function Unidad2Page() {
               <Calculator className="mr-2 h-5 w-5" />
               Probar Quiz de Conversión
             </a>
+          </div>
+        </section>
+
+        {/* SEO FAQ Section */}
+        <section className="mb-20 glass rounded-2xl p-8">
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">
+            Preguntas Frecuentes - Calculadora de Datos
+          </h2>
+          <div className="space-y-6">
+            <div className="glass-dark rounded-lg p-6">
+              <h3 className="text-xl font-semibold text-white mb-3">¿Cómo convertir binario a decimal?</h3>
+              <p className="text-gray-300">
+                Para convertir binario a decimal, multiplica cada dígito binario por 2 elevado a la posición del dígito (empezando por 0 desde la derecha). 
+                Usa nuestra calculadora binario decimal para obtener resultados instantáneos.
+              </p>
+            </div>
+            <div className="glass-dark rounded-lg p-6">
+              <h3 className="text-xl font-semibold text-white mb-3">¿Cuál es la diferencia entre KB y KiB?</h3>
+              <p className="text-gray-300">
+                KB (Kilobyte) = 1000 bytes, mientras que KiB (Kibibyte) = 1024 bytes. Nuestro convertidor de unidades de datos 
+                te ayuda a calcular ambas conversiones automáticamente.
+              </p>
+            </div>
+            <div className="glass-dark rounded-lg p-6">
+              <h3 className="text-xl font-semibold text-white mb-3">¿Cómo convertir hexadecimal a binario?</h3>
+              <p className="text-gray-300">
+                Cada dígito hexadecimal (0-F) representa 4 dígitos binarios. Usa nuestra calculadora hexadecimal binario 
+                para conversiones rápidas y precisas entre sistemas numéricos.
+              </p>
+            </div>
+            <div className="glass-dark rounded-lg p-6">
+              <h3 className="text-xl font-semibold text-white mb-3">¿Qué es el sistema binario?</h3>
+              <p className="text-gray-300">
+                El sistema binario es un sistema de numeración base 2 que usa solo los dígitos 0 y 1. 
+                Es fundamental para entender cómo funcionan los ordenadores y sistemas operativos.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* SEO Footer Content */}
+        <section className="mb-20 glass rounded-2xl p-8">
+          <h2 className="text-3xl font-bold text-white mb-6 text-center">
+            Recursos de Conversión de Datos - SMR
+          </h2>
+          <div className="prose prose-invert max-w-none">
+            <p className="text-gray-300 mb-6">
+              Nuestras <strong>herramientas de conversión de datos</strong> están diseñadas específicamente para estudiantes 
+              de <strong>Sistemas Operativos y Mantenimiento (SMR)</strong>. Aprende a convertir entre sistemas numéricos 
+              y unidades de almacenamiento con nuestras calculadoras online gratuitas.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6 mt-8">
+              <div className="text-center">
+                <h4 className="text-lg font-semibold text-white mb-3">🔢 Sistemas Numéricos</h4>
+                <p className="text-gray-300 text-sm">
+                  Binario, Decimal, Hexadecimal, Octal
+                </p>
+              </div>
+              <div className="text-center">
+                <h4 className="text-lg font-semibold text-white mb-3">💾 Unidades Datos</h4>
+                <p className="text-gray-300 text-sm">
+                  Bytes, KB, MB, GB, TB, PB
+                </p>
+              </div>
+              <div className="text-center">
+                <h4 className="text-lg font-semibold text-white mb-3">🎓 Formación SMR</h4>
+                <p className="text-gray-300 text-sm">
+                  Sistemas Operativos y Mantenimiento
+                </p>
+              </div>
+            </div>
+            <p className="text-gray-300 mt-6 text-center">
+              <strong>Calculadora online gratuita</strong> para conversión binario hexadecimal y unidades de datos. 
+              Herramienta esencial para estudiantes de informática y profesionales de sistemas.
+            </p>
           </div>
         </section>
       </div>
