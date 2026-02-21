@@ -121,7 +121,8 @@ export default function RecursosPage() {
         { name: 'Documentación Oficial Ubuntu', url: 'https://help.ubuntu.com', category: 'Documentación' },
         { name: 'Microsoft Learn Windows', url: 'https://learn.microsoft.com/windows', category: 'Documentación' },
         { name: 'VirtualBox Descarga', url: 'https://www.virtualbox.org', category: 'Software' },
-        { name: 'Rufus USB Bootable', url: 'https://rufus.ie', category: 'Software' }
+        { name: 'Rufus USB Bootable', url: 'https://rufus.ie', category: 'Software' },
+        { name: 'Montaje y Mantenimiento', url: '/montaje-mantenimiento-equipos', category: 'Curso' }
       ]
     },
     {

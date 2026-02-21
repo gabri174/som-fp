@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { Monitor, HardDrive, Shield, Terminal, CheckCircle, AlertTriangle, ArrowRight, Terminal as Linux } from 'lucide-react'
+import { Monitor, HardDrive, Shield, Terminal, CheckCircle, AlertTriangle, ArrowRight, Terminal as Linux, ExternalLink } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Unidad 3: Instalación de Sistemas Operativos - SOM FP',
@@ -366,6 +366,170 @@ export default function Unidad3Page() {
                   <li>• Profesional: Acronis</li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Herramientas Open Source Section */}
+        <section className="mb-20">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-white mb-4">
+              Herramientas Open Source para Instalación
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Software gratuito y de código abierto para facilitar la instalación y gestión de sistemas operativos
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Ventoy */}
+            <div className="glass-dark rounded-xl p-6 hover:neon-glow transition-all duration-300">
+              <div className="bg-gradient-to-br from-green-600 to-green-800 rounded-lg p-4 mb-6">
+                <h3 className="text-xl font-bold text-white">Ventoy</h3>
+              </div>
+              <p className="text-gray-300 mb-4">
+                Crea USBs booteables multiboot. Puedes agregar múltiples ISOs y elegir cuál arrancar al inicio.
+              </p>
+              <ul className="text-gray-400 text-sm space-y-2 mb-6">
+                <li>✅ Soporta 1000+ ISOs</li>
+                <li>✅ Arranque Legacy y UEFI</li>
+                <li>✅ Persistencia de datos</li>
+                <li>✅ Totalmente gratuito</li>
+              </ul>
+              <a
+                href="https://www.ventoy.net"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-electric-blue hover:text-blue-400 transition-colors"
+              >
+                <ExternalLink className="mr-2 h-4 w-4" />
+                Descargar Ventoy
+              </a>
+            </div>
+
+            {/* Rufus */}
+            <div className="glass-dark rounded-xl p-6 hover:neon-glow transition-all duration-300">
+              <div className="bg-gradient-to-br from-purple-600 to-purple-800 rounded-lg p-4 mb-6">
+                <h3 className="text-xl font-bold text-white">Rufus</h3>
+              </div>
+              <p className="text-gray-300 mb-4">
+                Utilidad para crear USBs booteables desde Windows. Rápido, fiable y muy popular.
+              </p>
+              <ul className="text-gray-400 text-sm space-y-2 mb-6">
+                <li>✅ Muy rápido y eficiente</li>
+                <li>✅ Soporta ISOs e imágenes</li>
+                <li>✅ Verificación de integridad</li>
+                <li>✅ Gratuito y open source</li>
+              </ul>
+              <a
+                href="https://rufus.ie"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-electric-blue hover:text-blue-400 transition-colors"
+              >
+                <ExternalLink className="mr-2 h-4 w-4" />
+                Descargar Rufus
+              </a>
+            </div>
+
+            {/* BalenaEtcher */}
+            <div className="glass-dark rounded-xl p-6 hover:neon-glow transition-all duration-300">
+              <div className="bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg p-4 mb-6">
+                <h3 className="text-xl font-bold text-white">BalenaEtcher</h3>
+              </div>
+              <p className="text-gray-300 mb-4">
+                Herramienta multiplataforma para flashear imágenes en USBs y tarjetas SD.
+              </p>
+              <ul className="text-gray-400 text-sm space-y-2 mb-6">
+                <li>✅ Windows, macOS, Linux</li>
+                <li>✅ Interfaz muy intuitiva</li>
+                <li>✅ Validación automática</li>
+                <li>✅ Open source</li>
+              </ul>
+              <a
+                href="https://www.balena.io/etcher"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-electric-blue hover:text-blue-400 transition-colors"
+              >
+                <ExternalLink className="mr-2 h-4 w-4" />
+                Descargar BalenaEtcher
+              </a>
+            </div>
+
+            {/* GParted */}
+            <div className="glass-dark rounded-xl p-6 hover:neon-glow transition-all duration-300">
+              <div className="bg-gradient-to-br from-orange-600 to-orange-800 rounded-lg p-4 mb-6">
+                <h3 className="text-xl font-bold text-white">GParted</h3>
+              </div>
+              <p className="text-gray-300 mb-4">
+                Editor de particiones gratuito para Linux. Permite redimensionar, mover y gestionar particiones.
+              </p>
+              <ul className="text-gray-400 text-sm space-y-2 mb-6">
+                <li>✅ Gestión completa de particiones</li>
+                <li>✅ Soporta múltiples filesystems</li>
+                <li>✅ Live CD/USB disponible</li>
+                <li>✅ 100% open source</li>
+              </ul>
+              <a
+                href="https://gparted.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-electric-blue hover:text-blue-400 transition-colors"
+              >
+                <ExternalLink className="mr-2 h-4 w-4" />
+                Descargar GParted
+              </a>
+            </div>
+
+            {/* Clonezilla */}
+            <div className="glass-dark rounded-xl p-6 hover:neon-glow transition-all duration-300">
+              <div className="bg-gradient-to-br from-red-600 to-red-800 rounded-lg p-4 mb-6">
+                <h3 className="text-xl font-bold text-white">Clonezilla</h3>
+              </div>
+              <p className="text-gray-300 mb-4">
+                Solución de clonación y backup de particiones. Ideal para despliegues masivos.
+              </p>
+              <ul className="text-gray-400 text-sm space-y-2 mb-6">
+                <li>✅ Clonado de sistemas completos</li>
+                <li>✅ Backup y restauración</li>
+                <li>✅ Soporte multicasting</li>
+                <li>✅ Software libre</li>
+              </ul>
+              <a
+                href="https://clonezilla.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-electric-blue hover:text-blue-400 transition-colors"
+              >
+                <ExternalLink className="mr-2 h-4 w-4" />
+                Descargar Clonezilla
+              </a>
+            </div>
+
+            {/* Universal USB Installer */}
+            <div className="glass-dark rounded-xl p-6 hover:neon-glow transition-all duration-300">
+              <div className="bg-gradient-to-br from-cyan-600 to-cyan-800 rounded-lg p-4 mb-6">
+                <h3 className="text-xl font-bold text-white">Universal USB Installer</h3>
+              </div>
+              <p className="text-gray-300 mb-4">
+                Crea USBs booteables para distribuciones Linux desde Windows de forma sencilla.
+              </p>
+              <ul className="text-gray-400 text-sm space-y-2 mb-6">
+                <li>✅ Soporta 200+ distros</li>
+                <li>✅ Persistencia configurable</li>
+                <li>✅ Actualizaciones automáticas</li>
+                <li>✅ Gratuito</li>
+              </ul>
+              <a
+                href="https://www.pendrivelinux.com/universal-usb-installer"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-electric-blue hover:text-blue-400 transition-colors"
+              >
+                <ExternalLink className="mr-2 h-4 w-4" />
+                Descargar UUI
+              </a>
             </div>
           </div>
         </section>
