@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
-import { Menu, X, Cpu, BookOpen, Download, Brain } from 'lucide-react'
+import { Menu, X, Cpu, BookOpen, Download, Brain, Wrench } from 'lucide-react'
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -12,6 +12,7 @@ export default function Navigation() {
     { href: '/unidad-1-introduccion-sistemas', label: 'Unidad 1', icon: BookOpen },
     { href: '/unidad-2-gestion-datos', label: 'Unidad 2', icon: BookOpen },
     { href: '/unidad-3-instalacion-so', label: 'Unidad 3', icon: BookOpen },
+    { href: '/montaje-mantenimiento-equipos', label: 'Montaje', icon: Wrench },
     { href: '/recursos', label: 'Recursos', icon: Download },
     { href: '/som-quiz', label: 'SOM-Quiz', icon: Brain },
   ]
