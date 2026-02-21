@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import { Cpu, HardDrive, Monitor, Zap, Shield, Wrench, Settings, CheckCircle, AlertTriangle, ArrowRight, ExternalLink, Tool, Battery, Wifi } from 'lucide-react'
+import { Cpu, HardDrive, Monitor, Zap, Shield, Wrench, Settings, CheckCircle, AlertTriangle, ArrowRight, ExternalLink, Wrench as Tool, Battery, Wifi } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Montaje y Mantenimiento de Equipos Informáticos | Guía Completa SMR | SOM FP',
