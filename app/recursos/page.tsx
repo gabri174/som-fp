@@ -130,9 +130,9 @@ export default function RecursosPage() {
       description: 'Tutoriales en español',
       links: [
         { name: 'Curso Básico Linux', url: '#', category: 'Video' },
-        { name: 'Instalación Windows 11', url: '#', category: 'Video' },
-        { name: 'Conceptos de Redes', url: '#', category: 'Video' },
-        { name: 'Mantenimiento de Hardware', url: '#', category: 'Video' }
+        { name: 'Instalación Windows 11', url: 'https://youtu.be/6oaEGRaW82Q', category: 'Video' },
+        { name: 'Conceptos de Redes', url: 'https://www.youtube.com/watch?v=um41JAqO42g&list=PLSvxAUzJ-XSfY0KpwV8SHBlyLVcrZkENc', category: 'Video' },
+        { name: 'Mantenimiento de Hardware', url: 'https://www.youtube.com/watch?v=eKw56ZTYf_4&list=PLRt_sFUAViN3F2NTsufZZ1pS-FA2U82wy', category: 'Video' }
       ]
     }
   ]
