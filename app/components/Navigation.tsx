@@ -23,7 +23,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
-              <Cpu className="h-8 w-8 text-electric-blue" />
+              <img src="/logo.png" alt="SOM FP" className="h-8 w-8 rounded" />
               <span className="font-bold text-xl text-white">SOM FP</span>
             </Link>
           </div>

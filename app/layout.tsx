@@ -14,11 +14,24 @@ export const metadata: Metadata = {
   verification: {
     google: 'S6xkJ0Rj1nAj584psh71pj5jcXEWlFoIXkdXQSTNsDE',
   },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
+  manifest: '/site.webmanifest',
   openGraph: {
     title: 'Domina SOM: Tu guía definitiva para 1º de SMR',
     description: 'Aprende Sistemas Operativos y Mantenimiento de forma interactiva',
     type: 'website',
     locale: 'es_ES',
+    images: [
+      {
+        url: '/logo.png',
+        width: 512,
+        height: 512,
+        alt: 'SOM FP - Logo',
+      },
+    ],
   },
 }
 
