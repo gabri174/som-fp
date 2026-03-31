@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   description: 'Aprende Sistemas Operativos y Mantenimiento de forma interactiva. Temario completo para 1º de SMR con quizzes, recursos y guías paso a paso.',
   keywords: 'SOM, SMR, FP, sistemas operativos, mantenimiento, informática, educación',
   authors: [{ name: 'SOM FP' }],
+  verification: {
+    google: 'S6xkJ0Rj1nAj584psh71pj5jcXEWlFoIXkdXQSTNsDE',
+  },
   openGraph: {
     title: 'Domina SOM: Tu guía definitiva para 1º de SMR',
     description: 'Aprende Sistemas Operativos y Mantenimiento de forma interactiva',
